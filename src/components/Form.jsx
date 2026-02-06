@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useState,  } from "react"
 const Form = ()=>  {
   const [newText , setNewText] = useState("")
   const [newLastName , setNewLastName] = useState("")
   const [newMessage , setNewMessage] = useState("")
   const[newEmail , setNewEmail] = useState("")
-  const handleSubmit = (e)=>{
+  const handleSubmit = async (e)=>{
     e.preventDefault();
     if(!newText && !newEmail) return;
     setNewText("")
@@ -12,9 +12,16 @@ const Form = ()=>  {
     setNewEmail("")
     setNewMessage("")
 
+    setTimeout(() => {
+      alert('Message Dropped! (demo)');
+        }, 3000);
+
   }
+
+  
+
   return (
-     <form action="" method="post" onSubmit={(e)=>handleSubmit(e)} className="flex flex-col gap-4 lg:w-[70%] lg:justify-self-end">
+     <form action="" method="post" onSubmit={(e)=>handleSubmit(e)} className="flex flex-col gap-4 lg:w-[70%] lg:justify-self-end px-8">
             <label htmlFor="firstname" className="text-yellow-50 font-bold mt-2">First Name</label>
             <input type="text" 
             required 

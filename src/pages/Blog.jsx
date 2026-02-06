@@ -1,9 +1,13 @@
 import BlogPage from "./BlogPage"
 const Blog = () => {
- 
+
+  
   return (
     <>
-      
+       <section>
+
+
+       </section>
     </>
   )
 }
