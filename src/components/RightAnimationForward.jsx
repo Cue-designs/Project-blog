@@ -19,6 +19,6 @@ export  default function RightAnimationForward({ children }) {
         }
     })
   return (
-    <div ref={ref}className='opacity-0 -translate-x-96'>{children}</div>
+    <div ref={ref}className='opacity-0 -translate-x-16'>{children}</div>
   )
 }
