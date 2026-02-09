@@ -30,7 +30,7 @@ const Home = ()=>  {
           </RightAnimationForward>
           <p className="text-sm lg:text-base xl:text-lg leading-relaxed max-w-full lg:max-w-4xl text-yellow-50">Whether you're a beginner or an experienced developer, and ready to collaborate with others in the tech community, this is the place to start your journey. Feel free to reach out</p>
         </div>
-        <ScrollFadeIn>
+       
         <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-start">
           
           <picture className="w-full h-full overflow-hidden rounded-lg min-h-80 hidden md:block">
@@ -38,7 +38,6 @@ const Home = ()=>  {
            <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block" />
           </picture>
         </div>
-        </ScrollFadeIn>
         <ScrollFadeIn>
          <article className="text-white px-2 mt-8">
        <RightAnimationForward> <h3 className="mb-8 text-xl font-bold italic text-center">Explore, Learn, Grow</h3> </RightAnimationForward>

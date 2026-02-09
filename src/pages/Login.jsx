@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {  Link } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -6,7 +7,8 @@ const Login = () => {
     password: '',
     rememberMe: false,
   });
-
+ 
+  
   const [errors, setErrors] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
@@ -177,12 +179,12 @@ const Login = () => {
         </div>
 
         <div className="grid grid-cols-2 gap-4">
-          <button
-            type="button"
+          <Link
+            to="/"
             className="flex items-center justify-center gap-2 py-3 px-4 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-lg text-white transition-colors"
           >
-            <span>Google</span>
-          </button>
+            <span>Home</span>
+          </Link>
           <button
             type="button"
             className="flex items-center justify-center gap-2 py-3 px-4 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-lg text-white transition-colors"
