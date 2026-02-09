@@ -12,6 +12,7 @@ import './App.css'
 
 function App() {
   
+  
   return (
     <>
       
@@ -24,11 +25,16 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route
+         path="post" element={<Blog />} >
+          
+         </Route>
+        
         <Route path="*" element={<Missing />} />
       </Route>
     </Routes>
     </>
   )
-}
+    }
 
 export default App

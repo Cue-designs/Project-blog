@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom"
 import Form from "../components/Form"
+import RightAnimationForward from "../components/RightAnimationForward"
 const About = ()=>  {
   
   return (
    <section className="font-roboto">
        <div className=" px-2 bg-green-50  ">
         <strong>
-          <h2 className=" ml-3 p-2 text-[2rem]">About CJ's Blog</h2>
+          <RightAnimationForward><h2 className=" ml-3 p-2 text-[2rem]">About CJ's Blog</h2>
+          </RightAnimationForward>
         </strong>
         <p className="p-2 text-[1.23rem] ">I am to inspire others to pursue their coding dreams </p>
-        <p className=" p-2 text-[.7rem">Welcome to my personal blog where I share my experience learning to code and the eciting adventures of building a tech start up </p>
+        <p className=" p-2 text-[.7rem]">Welcome to my personal blog where I share my experience learning to code and the eciting adventures of building a tech start up </p>
         <p>Through my blog, the goal is to inspire people to chase their coding dreams.I believe that with dertermination anyone can break through</p>
         <div className="flex justify-center w-full">
           <Link to="signup"className="rounded-md px-4 py-2 border-[1px] ml-2 flex my-4 justify-center hover:text-yellow-600 w-[18rem]  ">Join the journey</Link>

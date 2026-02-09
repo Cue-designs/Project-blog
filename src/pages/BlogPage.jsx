@@ -1,30 +1,47 @@
-import { useParams } from "react-router-dom";
+import api from "../api/blog-api.js";
+import {  useState,useEffect } from "react";
+const BlogPage = () => {
+ 
+   const [post, setPost] = useState([]);
 
-const BlogPage = ({ isClicked = false } = {}) => {
-  // Simple sample articles
+useEffect(()=>{
+  const fetchData = async ()=> {
+    try{
+      const response = await api.get('/post/:id');
+      setPost(response.data);
+    }
+    catch (err){
+      if (err.response) {
+     // when it is not  not in 200 response range
+      console.error(err.response.data);
+      console.error(err.response.status);
+      console.error(err.response.headers);
+      }
+      else{
+      console.error(`Error: ${err.message}`);
+      }
+    }
+  }
+  fetchData();
 
-  const articles = [
-    { id: 1, title: 'Blog Article', content: 'This is the first blog article content.' },
-    { id: 2, title: 'Blog Article 2', content: 'This is the second blog article content.' },
-    { id: 3, title: 'Blog Article 3', content: 'This is the third blog article content.' },
-  ];   
+}, [])
+
+  
    
-const { id } = useParams();
 
-  if (isClicked) {
   
 
   return (
-    <main>
-      {articles.map((item) => (
+    <section>
+      {post.map((item) => (
         <article key={item.id}>
           <h2>{item.title}</h2>
           <p>{item.content}</p>
         </article>
       ))}
-    </main>
+    </section>
   );
-}
+
 };
 
 export default BlogPage;

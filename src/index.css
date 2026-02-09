@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@theme {
+   --animate-fadein:fadein 1s ease-out forwards;
+   --animate-forwardright:rightside 2s ease-out forwards;
+
+   @keyframes fadein {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+
+   @keyframes rightside {
+     0% {
+       transform: translateX(-400px);
+       opacity: 0;
+       }
+      
+     100% {
+       transform: translateX(0);
+       opacity: 1;
+     }
+   }
+}
+
 
 
 /* :root {

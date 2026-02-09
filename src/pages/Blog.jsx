@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <>
        <section>
-
+        <BlogPage />
 
        </section>
     </>
