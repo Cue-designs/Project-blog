@@ -7,10 +7,10 @@ export  default function ScrollFadeIn({ children }) {
     useEffect(()=>{
         const observer = new IntersectionObserver(([entry])=>{
             if(entry.isIntersecting && ref.current){
-                ref.current.classList.add("animate-fadeIn")
+                ref.current.classList.add("animate-fadein")
             }
             else{
-                 ref.current.classList.remove("animate-fadeIn")
+                 ref.current.classList.remove("animate-fadein")
             }
 
         }, {threshold: 0.1})
@@ -18,6 +18,6 @@ export  default function ScrollFadeIn({ children }) {
        return ()=> observer.disconnect()
     }, [])
   return (
-    <div  ref={ref} className='opacity-0'>{children}</div>
+    <div  ref={ref} className='opacity-0 -translate-y-4'>{children}</div>
   )
 }

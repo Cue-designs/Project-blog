@@ -2,26 +2,28 @@
 
 @theme {
    --animate-fadein:fadein 1s ease-out forwards;
-   --animate-forwardright:forwardright 2s ease-out forwards;
+   --animate-forwardright:forwardright 1s ease-out forwards;
 
    @keyframes fadein {
      0% {
+      transform: translateY(-20px);
        opacity: 0;
      }
      100% {
+            transform: translateY(0px);
        opacity: 1;
      }
    }
 
    @keyframes forwardright {
      0% {
-       transform: translateX(-40px);
+       transform: translateX(-30px);
        opacity: 0;
        will-change: transform, opacity
        }
       
      100% {
-       transform: translateX(0);
+       transform: translateX(0px);
        opacity: 1;
      }
    }
