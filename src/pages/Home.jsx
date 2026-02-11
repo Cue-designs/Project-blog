@@ -64,6 +64,52 @@ const Home = ()=>  {
         </article>
      
       </section>
+
+      <ScrollFadeIn>
+        <section className="py-12 px-4 lg:px-10">
+          <RightAnimationForward>
+            <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold text-yellow-50 tracking-wide">Our Partnerships</h2>
+          </RightAnimationForward>
+          <p className="text-center text-lg lg:text-xl mb-12 max-w-3xl mx-auto text-yellow-50 leading-relaxed">
+            We're proud to collaborate with leading institutions and organizations in the tech and education space. These partnerships help us bring valuable resources, events, and opportunities to our community.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img 
+                src="src/assets/ifatoss_university_logo.png" 
+                alt="Ifatoss University Logo" 
+                className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
+              />
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">Ifatoss University</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Partnering to provide educational resources and coding workshops for students.
+              </p>
+            </div>
+            <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img 
+                src="src/assets/ifatoss_src_logo.png" 
+                alt="Ifatoss SRC Logo" 
+                className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
+              />
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">Ifatoss SRC</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Collaborating on student-led tech initiatives and community events.
+              </p>
+            </div>
+            <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <img 
+                src="src/assets/i_tech_hub_logo.png" 
+                alt="I Tech Hub Logo" 
+                className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
+              />
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">I Tech Hub</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Working together to foster innovation through mentorship and startup support.
+              </p>
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
     
 
    </main>
