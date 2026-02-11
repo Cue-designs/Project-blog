@@ -48,7 +48,7 @@ const About = () => {
      </ScrollFadeIn> 
 
      <ScrollFadeIn>
-       <div className="px-4 py-8 max-w-4xl mx-auto text-center md:text-left">
+       <div className="px-4 py-8 max-w-4xl mx-auto text-center md:text-left px-8">
          <h3 className="text-2xl font-bold mb-4 md:text-3xl text-purple-600">Our Vision</h3>
          <p className="text-lg text-amber-100 mb-6 md:text-xl ">
            My vision for CJ's Blog is to create a vibrant community where aspiring coders and tech enthusiasts can find inspiration, resources, and support to turn their ideas into reality. I envision a world where coding is accessible to everyone, regardless of background, fostering innovation and creativity in the tech space.
@@ -70,15 +70,15 @@ const About = () => {
      </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <article className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 px-2 mb-8 md:grid-cols-3"> 
-          <picture className="hidden object-cover h-80 overflow-hidden rounded-md sm:block md:col-span-2">
+        <article className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 px-2 mb-8 md:grid-cols-3 px-9 lg:px-18"> 
+          <picture className="hidden object-cover h-80 overflow-hidden rounded-md sm:block md:col-span-2 h-90">
             <img src={techroom} alt="Tech room illustration" className="h-full w-full object-cover transition-transform duration-300 hover:scale-105" />
           </picture>
-          <div className="bg-purple-500 flex flex-col items-center justify-start rounded-lg p-4 shadow-lg">
+          <div className="bg-purple-500 flex flex-col items-center justify-start rounded-lg p-4 shadow-lg ">
             <img
               src={ray}
               alt="Ray illustration"
-              className="h-[120px] m-0 block md:h-[100px] lg:-mt-2 transition-transform duration-300 hover:rotate-6"
+              className="h-30 m-0 block md:h-25 lg:-mt-2 transition-transform duration-300 hover:rotate-24 h-50"
             />
             <p className="text-white px-4 md:text-center my-2 py-4 text-center sm:text-2xl md:text-xl font-semibold">
               Unleash your imagination in a world of endless possibilities, innovation, and creativity!

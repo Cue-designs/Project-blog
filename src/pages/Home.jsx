@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import iFatoss from "../assets/iFatoss.png"
 import ScrollFadeIn from "../components/ScrollFadeIn"
 import RightAnimationForward from "../components/RightAnimationForward"
 const Home = ()=>  {
@@ -76,7 +77,7 @@ const Home = ()=>  {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <img 
-                src="src/assets/ifatoss_university_logo.png" 
+                src={iFatoss} 
                 alt="Ifatoss University Logo" 
                 className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
               />
