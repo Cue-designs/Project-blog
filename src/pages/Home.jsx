@@ -110,6 +110,47 @@ const Home = ()=>  {
           </div>
         </section>
       </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="py-12 px-4 lg:px-10">
+          <RightAnimationForward>
+            <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold text-yellow-50 tracking-wide">Meet Our Tech-Related Students</h2>
+          </RightAnimationForward>
+          <p className="text-center text-lg lg:text-xl mb-12 max-w-3xl mx-auto text-yellow-50 leading-relaxed">
+            Discover some of our talented tech enthusiasts who are passionate about coding, innovation, and building the future. These level 300 students are actively contributing to the tech community through projects, collaborations, and continuous learning.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+            <div className="flex flex-col items-center bg-purple-600 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">Samuel</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300 mb-2"> 300 Level</p>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Samuel is an aspiring full-stack developer with a keen interest in web technologies and AI integration.
+              </p>
+            </div>
+            <div className="flex flex-col items-center bg-purple-600 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">Edward</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300 mb-2"> 300 Level</p>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Edward focuses on web app development and graphic design, always exploring new ways to secure digital experiences.
+              </p>
+            </div>
+            <div className="flex flex-col items-center bg-purple-600 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">Favour</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300 mb-2">300 Level</p>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                Favour is passionate about video editing, Graphic design and cyber security helping to solve real-world problems.
+              </p>
+            </div>
+            <div className="flex flex-col items-center bg-purple-600 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <h3 className="text-xl font-semibold text-yellow-50 mb-2">David</h3>
+              <p className="text-center text-sm lg:text-base text-gray-300 mb-2"> 300 Level</p>
+              <p className="text-center text-sm lg:text-base text-gray-300">
+                David excels in computer Science and AI computing, building scalable applications for the modern web.
+              </p>
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
     
 
    </main>
