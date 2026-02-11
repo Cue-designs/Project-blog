@@ -13,7 +13,7 @@ const Header = () => {
        {/*  desktop button */}
         <section>
           <Link to="/"> Home </Link>
-          <Link to="/post/1"> Blog </Link>
+          <Link to="/post/"> Blog </Link>
           <Link to="/about"> About </Link>
           <Link to="/login"> Login </Link>
           <Link to="/signup"> Signup </Link>
