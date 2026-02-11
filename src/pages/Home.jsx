@@ -29,39 +29,46 @@ const Home = ()=>  {
      
    
   
-      <section>
-        <div className="mb-8 lg:mb-12 xl:mb-12 p-6 lg:p-10 xl:p-12">
-          <h2 className="text-2xl lg:text-2xl xl:text-3xl mb-4 lg:mb-6 text-yellow-50">Get in touch</h2>
-          
-          <p className="text-sm lg:text-base xl:text-lg leading-relaxed max-w-full lg:max-w-4xl text-yellow-50">Whether you're a beginner or an experienced developer, and ready to collaborate with others in the tech community, this is the place to start your journey. Feel free to reach out</p> 
-        </div>
-       
-        <div className="grid grid-cols-1 lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-start">
-          
-          <picture className="w-full h-full overflow-hidden rounded-lg min-h-80 hidden md:block">
-           <source srcSet="/src/assets/coding.png" type="image/png" />
-           <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block" />
-          </picture>
-        </div>
+       <section className="lg:pt-48">
+         <ScrollFadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-center">
+            <div className="mb-8 lg:mb-12 xl:mb-12 p-6 lg:p-10 xl:p-12">
+             <h2 className="text-2xl lg:text-4xl xl:text-6xl mb-6 text-yellow-50">Get in touch</h2>
+            
+             <p className="text-md lg:text-xl xl:text-xl leading-relaxed max-w-full lg:max-w-4xl text-yellow-50">Whether you're a beginner or an experienced developer, and ready to collaborate with others in the tech community, this is the place to start your journey. Feel free to reach out</p> 
+           </div>
+                   
+                     <div className="">
+            
+                           <picture className="w-full h-full overflow-hidden  min-h-80 hidden md:block p-10">
+                            <source srcSet="/src/assets/coding.png" type="image/png" />
+                           <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block rounded-lg transition shadow-[0_3px_8px_0_rgba(255,255,255,0.6)]  hover:scale-105" />
+                            </picture>
+                     </div>
+          </div>
+          </ScrollFadeIn>
         
-         <article className="text-white px-2 mt-8">
-            <RightAnimationForward> <h3 className="mb-8 text-xl font-bold italic text-center">Explore, Learn, Grow</h3> </    RightAnimationForward>
+         <article className=" text-white px-2 mt-8 grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-center lg:py-48">
+            <RightAnimationForward> <h3 className="mb-8 text-2xl font-bold italic text-center md:text-4xl xl:text-5xl">Explore, Learn, Grow</h3> </    RightAnimationForward>
 
              <ScrollFadeIn>
-             <p>Embark on a captivating journey through the wolrd of coding, Tech stack and enterprenu. Join me as i share insights, memorires and personal reflections on the challeges and triumphs of building something from scratch</p>
-              <p className="mt-16">Experience the energy and excitement of the tech world as we explore the depths of coding and    start  up development for this final Year project </p>
-             </ScrollFadeIn>
-              <Link to="/login"className="rounded-md text-black bg-white px-6 py-2 block my-4 text-center">Join Now</Link>
-           </article>
-       
-     <article className="bg-white text-black-400">
-        <div className="px-4 pt-16">
-          <RightAnimationForward> <h4 className="font-bold text-3xl ">Mission</h4>
-          </RightAnimationForward>
-          <p className="font-semibold italic text-xl mt-4">Empowering innovators</p>
-          <p className="mt-4">This blog is dedicated to empowering aspiring coders and tech enthusiasts by sharing knowledge, experiences, and resources to help them succeed in their coding journey and entrepreneurial endeavors.</p>
-          <p className="my-4 pb-8">Through contnet, I thrive to offer a unique blend of insights, guidance and motivation to fuel the entrepreneurial sprirt within each reader. Join us on this jorney of growth, learning, and sucess in the tech industry </p>
-        </div> 
+             <div className="lg:text-xl">
+               <p>Embark on a captivating journey through the wolrd of coding, Tech stack and enterprenu. Join me as i share insights, memorires and personal reflections on the challeges and triumphs of building something from scratch</p>
+                <p className="mt-16">Experience the energy and excitement of the tech world as we explore the depths of coding and    start  up development for this final Year project </p>
+               
+                <Link to="/login"className="rounded-md text-black bg-white px-6 py-2 block my-4 text-center">Join Now</Link>
+             </div>
+              </ScrollFadeIn>
+          </article>
+
+         <article className="bg-white text-black-400">
+            <div className="px-4 pt-16">
+              <RightAnimationForward> <h4 className="font-bold text-3xl ">Mission</h4>
+              </RightAnimationForward>
+              <p className="font-semibold italic text-xl mt-4">Empowering innovators</p>
+              <p className="mt-4">This blog is dedicated to empowering aspiring coders and tech enthusiasts by sharing knowledge, experiences, and resources to help them succeed in their coding journey and entrepreneurial endeavors.</p>
+              <p className="my-4 pb-8">Through contnet, I thrive to offer a unique blend of insights, guidance and motivation to fuel the entrepreneurial sprirt within each reader. Join us on this jorney of growth, learning, and sucess in the tech industry </p>
+            </div> 
         </article>
      
       </section>
