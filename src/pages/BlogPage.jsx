@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
-import Article from "./Article";
 const BlogPage = (post) => {
 
   return (
     <section>
-      {post.map((article) => (
-        <Article key={article.id} post={post} />
-      ))}
-    </section>
+        <Link to={`/post${post.id}`}>
+            <h2>{post.title}</h2>
+            <p>{post.datetime}</p>
+        </Link>
+
+        <p>
+          {(post.body).legth <= 25
+          ? post.body
+          : `${(post.body).slice(0, 25)}.....`
+          }
+
+        </p>
+     </section>
   );
 
 };

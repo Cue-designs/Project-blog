@@ -17,7 +17,7 @@ const About = () => {
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/45 text-white p-4 overflow-y-auto"> 
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/70 text-white p-4 overflow-y-auto"> 
         
           <strong>
             

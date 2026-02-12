@@ -5,7 +5,7 @@ const Blog = (search, setsearch, post) => {
   
   return (
     <>
-       <section>
+       <section className="bg-amber-200">
         <nav><input type="search" 
         name="" 
         className="bg-amber-100"
@@ -15,14 +15,16 @@ const Blog = (search, setsearch, post) => {
         placeholder="Search post"
         onChange={(e)=>setsearch(e.target.value)}
         
-        />
-        
+        />   
         </nav>
-
         <section className="bg-amber-50">
           {
             post.lenght ?(
-              <BlogPage post={post} />
+             <section>
+                {post.map((article) => (
+                  <BlogPage key={article.id} post={post} />
+                   ))}
+             </section>
             ) :(
               <p className="text-2xl text-center font-bold">Sorry There is no blog Post available yet Login to create one <FaTimes className="text-red-800 bg-red-800"/></p>
             )
