@@ -89,17 +89,17 @@ const About = () => {
 
       <ScrollFadeIn>
         <div className="px-4 py-8 max-w-4xl mx-auto  text-center">
-          <h3 className="text-2xl font-bold mb-4 md:text-3xl text-purple-600">Why Join Us?</h3>
+          <h3 className="text-2xl font-bold  md:text-3xl text-purple-600 lg:mb-16">Why Join Us?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-gray-100 p-16 rounded-lg  shadow-md">
+            <div className="bg-gray-100 p-16 rounded-lg  shadow-md transition  hover:scale-110">
               <h4 className="text-xl font-semibold mb-2">Inspiring Stories</h4>
               <p>Real-life experiences from my coding journey to keep you motivated.</p>
             </div>
-            <div className="bg-gray-100 p-16 rounded-lg shadow-md">
+            <div className="bg-gray-100 p-16 rounded-lg shadow-md  transition hover:scale-110">
               <h4 className="text-xl font-semibold mb-2">Practical Tips</h4>
               <p>Actionable advice and code snippets to apply immediately.</p>
             </div>
-            <div className="bg-gray-100 p-16 rounded-lg shadow-md">
+            <div className="bg-gray-100 p-16 rounded-lg shadow-md  transition hover:scale-110">
               <h4 className="text-xl font-semibold mb-2">Community Support</h4>
               <p>Connect with like-minded individuals and grow together.</p>
             </div>

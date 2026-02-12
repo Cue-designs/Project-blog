@@ -44,7 +44,7 @@ const Home = ()=>  {
             
                            <picture className="w-full h-full overflow-hidden  min-h-80 hidden md:block p-10">
                             <source srcSet="/src/assets/coding.png" type="image/png" />
-                           <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block rounded-lg transition shadow-[0_3px_8px_0_rgba(255,255,255,0.6)] lg:hover:scale-115" />
+                           <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block rounded-lg transition shadow-[0_3px_8px_0_rgba(255,255,255,0.6)] lg:hover:scale-115 " />
                             </picture>
                      </div>
           </div>
