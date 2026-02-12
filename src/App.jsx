@@ -136,7 +136,7 @@ function App() {
       }
 ])
    const [search, setsearch] = useState("")
-   const [searchResult, setSearchResult] = useState([])
+   
   
   return (
     <>

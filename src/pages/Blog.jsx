@@ -1,7 +1,7 @@
 import BlogPage from "./BlogPage"
 import { FaTimes } from "react-icons/fa"
 const Blog = (search, setsearch, post) => {
-
+const [searchResult, setSearchResult] = useState([])
   
   return (
     <>
