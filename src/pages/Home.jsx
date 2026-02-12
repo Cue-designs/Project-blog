@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom"
-import iFatoss from "../assets/iFatoss.png"
+import iFatoss from "../assets/iFatoss.jpg"
+import src from "../assets/src.jpg"
+import techhub from "../assets/techhub.jpg"
 import ScrollFadeIn from "../components/ScrollFadeIn"
 import RightAnimationForward from "../components/RightAnimationForward"
 const Home = ()=>  {
   
   return (
-   <main className="mt-10 mx-4 lg:mx-4 bg-black md:mx-3 sm:mx-2">
+   <main className="mt-10  bg-black md:mx-3 sm:mx-2">
      
-      <section className=" lg:ml-16 xl:ml-20">
+      <section className=" lg:ml-16 xl:ml-20 mx-8">
        <RightAnimationForward> <h2 className="text-3xl mb-16 sm:text-xl ml-2  md:text-2xl ml-4 lg:text-3xl  w-full leading-tight tracking-wider text-yellow-50  ">Start your coding jornery: Exploring the Programming</h2>
        </RightAnimationForward>
         <ScrollFadeIn>
@@ -29,9 +31,9 @@ const Home = ()=>  {
      
    
   
-       <section className="lg:pt-48">
+       <section className=" lg:pt-48 ">
          <ScrollFadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-center">
+          <div className="mx-8 grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 items-center">
             <div className="mb-8 lg:mb-12 xl:mb-12 p-6 lg:p-10 xl:p-12">
              <h2 className="text-2xl lg:text-4xl xl:text-6xl mb-6 text-yellow-50">Get in touch</h2>
             
@@ -52,7 +54,7 @@ const Home = ()=>  {
             <RightAnimationForward> <h3 className="mb-8 text-2xl font-bold italic text-center md:text-4xl xl:text-5xl">Explore, Learn, Grow</h3> </    RightAnimationForward>
 
              <ScrollFadeIn>
-             <div className="lg:text-xl">
+             <div className="mx-8 lg:text-xl">
                <p>Embark on a captivating journey through the wolrd of coding, Tech stack and enterprenu. Join me as i share insights, memorires and personal reflections on the challeges and triumphs of building something from scratch</p>
                 <p className="mt-16">Experience the energy and excitement of the tech world as we explore the depths of coding and    start  up development for this final Year project </p>
                
@@ -61,14 +63,17 @@ const Home = ()=>  {
               </ScrollFadeIn>
           </article>
 
-         <article className="bg-white text-black-400">
-            <div className="px-4 pt-16">
-              <RightAnimationForward> <h4 className="font-bold text-3xl ">Mission</h4>
+         <article className="bg-white text-black-400 py-24">
+           <ScrollFadeIn> <div className=" grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 ">
+              <RightAnimationForward> <h4 className="font-bold text-center text-3xl py-4 ml-4 lg:text-5xl items-center">Mission</h4>
               </RightAnimationForward>
-              <p className="font-semibold italic text-xl mt-4">Empowering innovators</p>
-              <p className="mt-4">This blog is dedicated to empowering aspiring coders and tech enthusiasts by sharing knowledge, experiences, and resources to help them succeed in their coding journey and entrepreneurial endeavors.</p>
-              <p className="my-4 pb-8">Through contnet, I thrive to offer a unique blend of insights, guidance and motivation to fuel the entrepreneurial sprirt within each reader. Join us on this jorney of growth, learning, and sucess in the tech industry </p>
-            </div> 
+              <span className="block px-4 ">
+                <p className="font-bold italic text-center text-xl  lg:text-2xl pb-4">Empowering innovators</p>
+                <p className="lg:pb-8">This blog is dedicated to empowering aspiring coders and tech enthusiasts by sharing knowledge, experiences, and resources to help them succeed in their coding journey and entrepreneurial endeavors.</p>
+              </span>
+              <p className="my-4 px-4 lg:translate-y-6 ">Through content, I thrive to offer a unique blend of insights, guidance and motivation to fuel the entrepreneurial sprirt within each reader. Join us on this jorney of growth, learning, and sucess in the tech industry </p>
+             </div>
+           </ScrollFadeIn>
         </article>
      
       </section>
@@ -95,7 +100,7 @@ const Home = ()=>  {
             </div>
             <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <img 
-                src="src/assets/ifatoss_src_logo.png" 
+                src={src}
                 alt="Ifatoss SRC Logo" 
                 className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
               />
@@ -106,7 +111,7 @@ const Home = ()=>  {
             </div>
             <div className="flex flex-col items-center bg-gray-800 rounded-lg p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <img 
-                src="src/assets/i_tech_hub_logo.png" 
+                src={techhub} 
                 alt="I Tech Hub Logo" 
                 className="w-32 h-32 object-contain mb-4 rounded-full border-2 border-yellow-50 bg-white p-2"
               />
@@ -122,7 +127,7 @@ const Home = ()=>  {
       <ScrollFadeIn>
         <section className="py-12 px-4 lg:px-10">
           <RightAnimationForward>
-            <h2 className="text-3xl lg:text-4xl mb-8 text-center font-bold text-yellow-50 tracking-wide">Meet Our Tech-Related Students</h2>
+            <h2 className=" mx-8 text-3xl lg:text-4xl mb-8 text-center font-bold text-yellow-50 tracking-wide">Meet Our Tech-Related Students</h2>
           </RightAnimationForward>
           <p className="text-center text-lg lg:text-xl mb-12 max-w-3xl mx-auto text-yellow-50 leading-relaxed">
             Discover some of our talented tech enthusiasts who are passionate about coding, innovation, and building the future. These level 300 students are actively contributing to the tech community through projects, collaborations, and continuous learning.

@@ -50,7 +50,7 @@ const Login = () => {
     setTimeout(() => {
       console.log('Login attempt:', formData);
       // In real app → authService.login(formData)
-      alert('Logged in successfully! (demo)');
+      alert(`Please wait work in progress`)
       setIsLoading(false);
     }, 1200);
   };

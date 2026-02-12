@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import Article from "./Article";
 const BlogPage = (post) => {
- 
-  
-
-  
-   
-
-  
 
   return (
     <section>
