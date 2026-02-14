@@ -21,10 +21,10 @@ const ArticlePage = () => {
        
    }, []);
     return (
-        <section className="text-lime-50"> 
-            <h2>{post?.title}</h2>
-            <p>{post?.datetime}</p>
-            <p>{post?.body}</p>
+        <section className="text-lime-50 min-h-[70vh] p-4 lg:px-24"> 
+            <h2 className="py-12 text-2xl font-bold text-center">{post?.title}</h2>
+            <p className="px-4 ">{post?.body}</p>
+            <p className="py-8 px-4">{post?.datetime}</p>
 
         </section>
     );
