@@ -41,7 +41,7 @@ const [posts, setPosts] = useState([])
         />   
 
         </nav>
-        <section className="bg-purple-100/80 mt-16 ">
+        <section className="bg-black mt-16  ">
           {
             posts.length > 0 ?(
              <section>

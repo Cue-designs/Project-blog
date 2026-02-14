@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const BlogPage = ({post}) => {
 
   return (
-    <section className="text-lime-50"> 
+    <div className=""><section className="text-purple-50 bg-black/80 p-4 rounded-md shadow-md">
         <Link to={`/post/${post.id}`}>
             <h2>{post.title}</h2>
             <p>{post.datetime}</p>
@@ -15,7 +15,7 @@ const BlogPage = ({post}) => {
             )
         } 
 
-     </section>
+     </section></div>
   );
 
 };
