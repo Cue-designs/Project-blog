@@ -41,7 +41,7 @@ const [posts, setPosts] = useState([])
         />   
 
         </nav>
-        <section className="bg-black mt-16  ">
+        <section className="bg-black mt-16  grid gap-8 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
           {
             posts.length > 0 ?(
              <section>
