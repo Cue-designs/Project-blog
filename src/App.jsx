@@ -2,12 +2,12 @@ import Layout from './components/Layout.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Blog from './pages/Blog.jsx'
+import ArticlePage from './pages/ArticlePage.jsx'
 import Missing from './pages/Missing.jsx'
 import {  Routes, Route } from 'react-router-dom'
 import Login from './pages/Login.jsx'  
 import Signup from './pages/Signup.jsx' 
 import './App.css'
-import { useState } from 'react'
 
 
 function App() {
@@ -27,8 +27,8 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route
-         path="post" element={<Blog  />} />
+        <Route path="post" element={<Blog  />} />
+        <Route path="post/:id" element={<ArticlePage  />} />
         
         <Route path="*" element={<Missing />} />
       </Route>
