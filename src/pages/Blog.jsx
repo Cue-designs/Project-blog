@@ -29,10 +29,10 @@ const [posts, setPosts] = useState([])
 
   return (
     <>
-       <section className="relative">
-        <nav className=" px-8 lg:px-64  sticky top-24"><input type="search" 
+       <section className="relative  ">
+        <nav className=" px-8  lg:px-64  "><input type="search" 
         name="" 
-        className=" text-purple-800 bg-green-200 px-4  font-bold py-2  flex grow shrink w-full items-center rounded-4xl    "
+        className=" text-purple-800 bg-green-200 px-4  fixed top-24 font-bold py-2  flex grow shrink w-full items-center rounded-4xl    "
         id="searching" 
         onSubmit={(e)=> e.preventDefault()}
         value={search}
@@ -41,7 +41,7 @@ const [posts, setPosts] = useState([])
         />   
 
         </nav>
-        <section className="bg-black mt-16  grid gap-8 grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+        <section className="bg-black mt-16  grid  grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 p-4 lg:px-24">
           {
             posts.length > 0 ?(
              <section>

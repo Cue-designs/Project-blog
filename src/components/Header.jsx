@@ -32,7 +32,7 @@ const Header = () => {
       {/*  mobile button */}
       <section className="mobile" style={{ display: isOpen ? 'block' :'none' }} >
         <Link to="/" className="homebtn"> Home </Link>
-        <Link to="/post/1"> Blog </Link>
+        <Link to="/post/"> Blog </Link>
         <Link to="/about"> About </Link>
         <Link to="/login"> Login </Link>  
         <Link to="/signup"> Signup </Link>
