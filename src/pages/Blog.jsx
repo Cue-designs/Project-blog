@@ -54,7 +54,7 @@ const [posts, setPosts] = useState([])
                 <p className="text-2xl text-center font-bold lg:text-4xl ">Sorry There is no blog Post available yet <FaTimes className="text-red-800 text-4xl justify-start items-start inline " /> </p>
               </article>
             )
-          }
+          } 
 
         </section>
 

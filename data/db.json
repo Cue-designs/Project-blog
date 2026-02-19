@@ -1,24 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Getting Started with Web Development",
-      "datetime": "January 05, 2026 09:00 AM",
-      "body": "Web development is an exciting field that combines creativity and logic. This post introduces the basic tools, languages, and mindset required to start your journey as a web developer."
-    },
-    {
-      "id": 2,
-      "title": "Understanding HTML Semantics",
-      "datetime": "January 06, 2026 11:15 AM",
-      "body": "Semantic HTML improves accessibility and SEO by giving meaning to web content. Learn how elements like header, article, and section help structure your pages correctly."
-    },
-    {
-      "id": 3,
-      "title": "CSS Flexbox Made Simple",
-      "datetime": "January 07, 2026 02:30 PM",
-      "body": "Flexbox is a powerful layout system in CSS. This article explains how flex containers and flex items work together to create responsive layouts."
-    },
-    {
       "id": 4,
       "title": "Mastering CSS Grid Layout",
       "datetime": "January 08, 2026 10:00 AM",
@@ -29,18 +11,6 @@
       "title": "JavaScript Basics for Beginners",
       "datetime": "January 09, 2026 04:45 PM",
       "body": "JavaScript adds interactivity to websites. This post covers variables, functions, and events to help beginners understand core concepts."
-    },
-    {
-      "id": 6,
-      "title": "Understanding the DOM",
-      "datetime": "January 10, 2026 01:20 PM",
-      "body": "The Document Object Model allows JavaScript to interact with HTML. Learn how to select, modify, and respond to elements dynamically."
-    },
-    {
-      "id": 7,
-      "title": "Introduction to ES6 Features",
-      "datetime": "January 11, 2026 09:40 AM",
-      "body": "ES6 introduced modern JavaScript features like arrow functions, let and const, and template literals that make code cleaner and more readable."
     },
     {
       "id": 8,
