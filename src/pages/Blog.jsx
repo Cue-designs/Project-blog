@@ -50,7 +50,7 @@ const [posts, setPosts] = useState([])
                    ))}
              </section>
             ) :(
-              <article className="flex min-h-[80vh] items-center justify-center  lg:px-24 gap-4">
+              <article className="flex min-h-[80vh] items-center justify-center  lg:px-24 gap-4 bg-purple-200">
                 <p className="text-2xl text-center font-bold lg:text-4xl ">Sorry There is no blog Post available yet <FaTimes className="text-red-800 text-4xl justify-start items-start inline " /> </p>
               </article>
             )
