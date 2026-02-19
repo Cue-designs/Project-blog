@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom"
+import ray from "../assets/ray.png"
 import iFatoss from "../assets/iFatoss.jpg"
+import laptop from "../assets/laptop.png"
+import motherboard from "../assets/motherboard.jpg"
+import coding from "../assets/coding.png"
 import src from "../assets/src.jpg"
 import techhub from "../assets/techhub.jpg"
 import ScrollFadeIn from "../components/ScrollFadeIn"
@@ -15,13 +19,13 @@ const Home = ()=>  {
         <ScrollFadeIn>
         <figure className="grid h-70 grid-cols-1 sm:grid-cols-3 grid-rows-1 lg:grid-cols-4 grid-rows-2  gap-6 mt-6 " >
           <picture  className=" hidden rounded-md sm:block col-span-2 row-span-2 lg:col-span-2 ">
-            <img src="src\assets\laptop.png" alt="" className="w-full h-full object-cover block" />
+            <img src={laptop} alt="" className="w-full h-full object-cover block" />
           </picture>
           <picture className="hidden rounded-md lg:block row-span-2 ">
-            <img src="src\assets\motherboard.jpg" alt="" className="w-full h-full object-cover block" />
+            <img src={motherboard} alt="" className="w-full h-full object-cover block" />
           </picture>
           <div className="bg-green-600 row-span-2 flex flex-col items-center justify-start rounded-lg  ">
-            <img src="src\assets\ray.png " alt="" className=" h-30 m-0 cols-span-1 block md:h-25 lg:-mt-2" /> 
+            <img src={ray} alt="" className=" h-30 m-0 cols-span-1 block md:h-25 lg:-mt-2" /> 
             <p className="text-white px-4 md:text-center -mt-4 ">Join me to see how i tackled most programming problems  and joined the Tech space</p>
             <Link to={'/login'} className="text-black bg-white px-4 py-2 flex rounded-md mt-4">Explore more</Link>
           </div>
@@ -43,8 +47,8 @@ const Home = ()=>  {
                      <div className="">
             
                            <picture className="w-full h-full overflow-hidden  min-h-80 hidden md:block p-10">
-                            <source srcSet="/src/assets/coding.png" type="image/png" />
-                           <img src="/src/assets/coding.png" alt="" className="w-full h-full object-cover block rounded-lg transition shadow-[0_3px_8px_0_rgba(255,255,255,0.6)] lg:hover:scale-115 " />
+                            <source srcSet={coding} type="image/png" />
+                           <img src={coding} alt="" className="w-full h-full object-cover block rounded-lg transition shadow-[0_3px_8px_0_rgba(255,255,255,0.6)] lg:hover:scale-115 " />
                             </picture>
                      </div>
           </div>
