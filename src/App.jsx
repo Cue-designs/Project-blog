@@ -29,7 +29,6 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="post" element={<Blog  />} />
         <Route path="post/:id" element={<ArticlePage  />} />
-        
         <Route path="*" element={<Missing />} />
       </Route>
     </Routes>
