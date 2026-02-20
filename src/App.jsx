@@ -3,6 +3,7 @@ import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Blog from './pages/Blog.jsx'
 import ArticlePage from './pages/ArticlePage.jsx'
+import Create from './pages/create.jsx'
 import Missing from './pages/Missing.jsx'
 import {  Routes, Route } from 'react-router-dom'
 import Login from './pages/Login.jsx'  
@@ -29,6 +30,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="post" element={<Blog  />} />
         <Route path="post/:id" element={<ArticlePage  />} />
+        <Route path="create" element={<Create />} />
         <Route path="*" element={<Missing />} />
       </Route>
     </Routes>

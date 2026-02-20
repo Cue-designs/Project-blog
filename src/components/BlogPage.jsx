@@ -2,22 +2,10 @@ import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import axios from "axios";
 const BlogPage = ({post}) => {
-       const addNewPost = async () => {
-            const newPost = {
-              title: [],
-              body: [],
-              datetime: new Date().toISOString()
-            };
+   // Function to add a new post with empty title and body
+   
 
-             try {
-              // json-server will automatically assign a new ID
-              const res = await axios.post('http://localhost:3500/posts', newPost);
-              console.log("Saved to file:", res.data);
-             } catch (err) {
-              console.error("Failed to write to file", err);
-             }
-        };  
-
+       
 
   return (
     <div className=" ">
