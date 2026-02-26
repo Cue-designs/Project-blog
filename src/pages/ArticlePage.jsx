@@ -37,11 +37,6 @@ const ArticlePage = () => {
             }
         }
 
-
-
-
-       
-
     return (
         <section className="text-lime-50 min-h-[70vh] p-4 lg:px-24"> 
             <h2 className="py-12 text-2xl font-bold text-center">{post?.title}</h2>
@@ -50,8 +45,6 @@ const ArticlePage = () => {
             <span className="flex justify-end"><FaTrash className="text-red-800 text-2xl cursor-pointer" onClick={()=>handleDeletePost()}/></span>
         </section>
     );
-
-
 
 };
 

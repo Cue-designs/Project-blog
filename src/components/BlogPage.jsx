@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
-import axios from "axios";
 const BlogPage = ({post}) => {
    // Function to add a new post with empty title and body
    
-
-       
 
   return (
     <div className=" ">
