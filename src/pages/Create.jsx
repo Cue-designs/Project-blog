@@ -34,14 +34,14 @@ const Create = () => {
           value={newPostTitle}
           placeholder="Title"
           onChange={(e) => setNewPostTitle(e.target.value)}
-          className="w-full p-2 mb-3 border border-purple-400 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500 bg-black text-green-200"
+          className="w-full p-2 mb-3 border border-purple-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-200 bg-black text-green-100"
         />
 
         <textarea
           value={newPostBody}
           placeholder="Your Post"
           onChange={(e) => setNewPostBody(e.target.value)}
-          className="w-full p-2 mb-3 border border-green-400 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 bg-black text-purple-200"
+          className="w-full p-2 mb-3 border border-green-700 rounded-md focus:outline-none focus:ring-2 focus:ring-green-200 bg-black text-purple-200"
           rows="5"
         />
 

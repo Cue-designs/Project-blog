@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaPlus } from "react-icons/fa";
 const BlogPage = ({post}) => {
    // Function to add a new post with empty title and body
    
@@ -19,11 +18,7 @@ const BlogPage = ({post}) => {
                 )
             } 
             
-            <div className="flex justify-end rounded-2xl bg-green-500 p-2 mt-4">
-                <Link to={`/create`}>
-                    <FaPlus className="text-white text-2xl cursor-pointer" />
-                </Link>
-            </div>
+           
         </section>
     </div>
   );

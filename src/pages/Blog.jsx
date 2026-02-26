@@ -1,6 +1,8 @@
 import BlogPage from "../components/BlogPage"
 import { FaTimes } from "react-icons/fa"
 import { useState, useEffect } from "react"  
+import { FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import axios from "axios"
 
 const Blog = (  ) => {
@@ -30,17 +32,23 @@ const [posts, setPosts] = useState([])
   return (
     <>
        <section className="relative  ">
-        <nav className=" px-8  lg:px-64  "><input type="search" 
-        name="" 
-        className=" text-purple-800 bg-green-200 px-4  font-bold py-2  flex grow shrink w-full items-center rounded-4xl    "
-        id="searching" 
-        onSubmit={(e)=> e.preventDefault()}
-        value={search}
-        placeholder="Search post"
-        onChange={(e)=>setsearch(e.target.value)}
-        />   
-
-        </nav>
+        <div className="flex w-full items-center justify-around px-8 lg:px-64 py-4">
+          <nav className=" px-8  lg:px-64 w-full items-center "><input type="search"
+          name=""
+          className=" text-purple-800 bg-green-200 px-4  font-bold py-2  flex grow shrink w-full items-center rounded-4xl    "
+          id="searching"
+          onSubmit={(e)=> e.preventDefault()}
+          value={search}
+          placeholder="Search post"
+          onChange={(e)=>setsearch(e.target.value)}
+          />
+          </nav>
+           <div className="  items-center rounded-xl bg-green-500 px-4 py-2 mt-4">
+                  <Link to={`/create`}>
+                      <FaPlus className="text-white text-2xl cursor-pointer" aria-label="create post" />
+                  </Link>
+          </div>
+        </div>
         <section className="px-8 lg:px-58 py-4">
           {
             posts.length > 0 ?(
